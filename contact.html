@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Web Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
+</head>
+<body>
+    <section class="sub-header" >
+        <nav>
+            <a href="index.html"><img src="images/logooo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hidemenu()" ></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    
+    <section class="location" >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115860.91173050224!2d89.30016612355828!3d24.841520863191178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc54e7e81df441%3A0x27133ed921fe73f4!2z4Kas4KaX4KeB4Kah4Ka84Ka-!5e0!3m2!1sbn!2sbd!4v1668850372240!5m2!1sbn!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    
+    <section class="contact" >
+        <div class="row">
+            <div class="con-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>XYZ road, ABC Building</h5>
+                        <p>Lorem ipsum dolor sit amet./p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+8801712898052</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-solid fa-envelope"></i>
+                    <span>
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <p>Enter Us Your Query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="con-col">
+                <form action="">
+                    <input type="text" placeholder="Enter Your Name"required>
+                    <input type="email" placeholder="Enter Your Email Addrress"required>
+                    <input type="text" placeholder="Enter Your Subject"required>
+                    <textarea rows="8" placeholder="Messeges"required></textarea>
+                    <button type="submit" class="btnn" >Post Messege</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer hula" >
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est vitae rem rerum odio distinctio iste quis natus,<br> blanditiis ducimus corporis doloribus architecto iusto aliquam <br>facilis id explicabo! Voluptatum, incidunt iusto?</p>
+        <div class="icons">
+            <i class="fa fa-brands fa-facebook-f"></i>
+            <i class="fa fa-brands fa-twitter"></i>
+            <i class="fa fa-brands fa-instagram"></i>
+            <i class="fa fa-brands fa-linkedin-in"></i>
+        </div>
+        <p>Made with <i class="fa-regular fa-heart"></i> Easy </p>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks") ;
+        function showmenu() {
+            navLinks.style.right = "0";
+        }
+        function hidemenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
